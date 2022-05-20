@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=M+PLUS+Rounded+1c:wght@900&family=Marck+Script&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="searchbar">
+            <input id="city" type="text" placeholder="City"><button onclick="running()" style="background: none;border: none;"><i class="large material-icons" style="font-size: 45px;color: white;">search</i></button>
+        </div>
+
+        <div id="await">
+            <h5 style="color: white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Generating Results..</h5><span></span>
+        </div>
+
+        <div id="content">
+            <div id="heading">
+                <h1 id="heading-data">Kolkata</h1>
+            </div>
+            <div id="data">
+               <span id="temp-data">4`C</span><span id="weather-icon" style="color: white;"></span>
+            </div>
+            <div id="date">
+                <p id="loc-date">01 Jan 2022</p>
+            </div>
+        </div>
+    </div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
